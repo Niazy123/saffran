@@ -1,0 +1,81 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(242, 240, 243);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-image: url(safran-krokus-bluete.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: moveBox 3s infinite alternate;
+  }
+  
+  @keyframes moveBox {
+    from {
+      left: 0;
+    }
+    to {
+      left: 200px;
+    }
+  }
+header {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.mitte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#teaser {
+  width: 100%;
+  height: 300px;
+}
+
+#teaser img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and(min-width: 800px) {
+  #teaser {
+    height: 600px;
+  }
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+}
+
+footer ul,
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+footer nav ul li a,
+nav ul li a {
+  font-weight: bold;
+  padding: 24px;
+}
+
+section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
