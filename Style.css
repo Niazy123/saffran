@@ -9,7 +9,8 @@ body {
 .search-container {
   display: flex;
   margin-bottom: 20px;
- }
+  position: r
+}
 
 #search-input {
   padding: 10px;
@@ -33,6 +34,7 @@ button:hover {
   background-color: #0056b3;
 }
 
+
 .box {
     width: 100px;
     height: 100px;
@@ -41,6 +43,7 @@ button:hover {
     background-size: cover;
     position: relative;
     animation: moveBox 3s infinite alternate;
+    border-radius: 30px;
   }
   
   @keyframes moveBox {
@@ -58,7 +61,7 @@ header {
 
 .mitte {
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   align-items: center;
 }
 
